@@ -1,0 +1,42 @@
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', serif, sans-serif;
+    line-height: 1.5;
+     display: flex;
+    justify-content: center;
+}
+
+div {
+    width: 600px;
+    margin: 100px;
+    padding: 70px 150px;
+    border: rgb(167, 163, 163) 0.8px solid;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0px 0px 0px 0px; 
+}
+
+h2 {
+    color: #006EB6;
+    font-size: 0.8em;
+    border-bottom: 0.8px solid  rgba(167, 163, 163, 0.429);
+    padding-top: 10px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+img { 
+    width: 150px;    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
