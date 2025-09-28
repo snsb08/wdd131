@@ -3,7 +3,8 @@ body{
     font-family: 'Times New Roman', serif, sans-serif;
     line-height: 1.5;
      display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 div {
@@ -39,4 +40,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.dark {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark h2 {
+    /* color: #4F9ACF; */
+    color: #A0D4ED;
 }
