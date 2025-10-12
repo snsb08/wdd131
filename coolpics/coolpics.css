@@ -99,23 +99,17 @@ dialog {
     background-color: #fff;
     color: #222E50;
     border: #222E50 solid 2px;
+    z-index: 10;
 }
 
 dialog img {
     max-height: 100%;
     width: 80%;
     border: none;
-    /* object-fit: none; */
     aspect-ratio: auto;
 }
 
 @media screen and (min-width: 700px) {
-   
-    /* ul {
-        /* visibility: hidden;
-        height: 0px; 
-        display: none;
-    } */
 
     .gallery {
         grid-template-columns: 1fr 1fr;
@@ -128,14 +122,6 @@ dialog img {
         display: none;
     }
 
-    /* ul {
-        display: block;
-    } */
-
-    /* .hide {
-        display: block;
-    } */
-
     li {
         display: inline-block;
         padding: 0 2rem;
@@ -144,4 +130,11 @@ dialog img {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+ 
+
+    dialog img {
+    width: 40%;
+    }
+
 }
