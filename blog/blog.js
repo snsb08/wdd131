@@ -54,10 +54,10 @@ function blogTemplate(article ) {
 			<figure>
 			<img src="${article.imgSrc}" alt="${article.imgAlt}"/>
 			</figure>
-			<p>${article.description}</p>
+			<p>${article.description} <a href="#">Read More...</a></p>
 		</section>
 	</article>`
 };
 
 const blogHtml = articles.map(blogTemplate);
-	  document.querySelector("#maincontent").innerHTML= blogHtml.join("");
+	  document.querySelector("#blog-articles").innerHTML= blogHtml.join("");
