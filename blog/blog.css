@@ -98,4 +98,14 @@ article {
     top: 0;
 }
 
+.date {
+  text-align: right;
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+  border-right: var(--accent-color) 1px solid;
+}
 
+main {
+    margin-top: 20px;
+  }
