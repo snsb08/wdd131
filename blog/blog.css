@@ -79,9 +79,12 @@ article {
     margin-bottom: 1rem;;
 }
 
-.skiptocontent {
+.skiptocontent a {
     position: absolute;
     top: -40px;
+    color: var(--accent-color);
+    background-color: var(--primary-color);  
+    padding: 0.5rem;
 }
 
 .skiptocontent a:focus {
