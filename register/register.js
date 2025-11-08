@@ -1,3 +1,5 @@
+
+// Template for adding participant sections
 function participantTemplate(count) {
     return `<section class="participant${count}">
      <p>Participant ${count}</p>
@@ -38,34 +40,18 @@ function participantTemplate(count) {
     </section>`;
 }
 
+// add participants button functionality
 const participantButton = document.querySelector("#add");
 
 let participantCount = 1;
 
 participantButton.addEventListener("click", function () {
     participantCount++;
-    // const participantSection = document.querySelector(".participants");
-    // const newParticipant = document.createElement("section");
-    participantButton.insertAdjacentHTML("beforebegin", participantTemplate(participantCount)); //didn't work with innerHTML
-    // participantSection.appendChild(newParticipant);
+    participantButton.insertAdjacentHTML("beforebegin", participantTemplate(participantCount)); 
 });
 
-// *****Before adding the above code, it was this and was working: just in case I mess up
-// participantButton.addEventListener("click", function (e) {
-//     participantCount++;
-//     const participantSection = document.querySelector(".participants");
-//     const newParticipant = document.createElement("section");
-//     newParticipant.innerHTML = participantTemplate(participantCount);
-//     participantSection.appendChild(newParticipant);
-// });
 
-// *****End of before code*****
-
-//   Submit Form:
-
-
-
-
+// display success message after submitting form
 function successTemplate(info) { 
     info = {
     name: document.getElementById("adult_name").value,
@@ -80,19 +66,15 @@ function successTemplate(info) {
 
 function submitForm(event) {
     event.preventDefault();
-    alert("Form Submitted!");
     const formCode = document.querySelector(".testbox");
     formCode.style.display = "none";
     const successMessage = document.createElement("div");
-    // successMessage.innerHTML = successTemplate("NAME", participantCount, totalFees());
     successMessage.innerHTML = successTemplate(participantCount);
     document.body.appendChild(successMessage);
 }
 const form = document.querySelector("form");
 form.addEventListener("submit", submitForm);
 
-// const submitFormButton = document.querySelector("#submitButton");
-// submitFormButton.addEventListener("submit", submitForm);
 
 // Find total fees
 const feeInput = document.querySelector("#fee");
