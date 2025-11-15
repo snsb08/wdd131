@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book</title>
+    <meta
+      name="description"
+      content="A Recipe Book website to save favorite food recipes "
+    />
+    <meta name="author" content="Sheyla Norton" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="recipes.css" />
+    <script src="main.js" defer></script>
+
+    <!-- open graph -->
+    <meta property="og:title" content="Recipe Book" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A Recipe Book website to save favorite food recipes."
+    />
+    <meta property="og:image" content="images/chocolate-chip-cookies.jpg" />
+    <meta
+      property="og:url"
+      content="https://snsb08.github.io/wdd131/recipes/index.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/recipe-book.png"
+        alt="the logo of the recipe book site, shows a book with a chef hat on the cover"
+        class="logo"
+      />
+      <h1>RECIPE BOOK</h1>
+    </header>
+    <main>
+      <form class="search-bar">
+        <input
+          type="search"
+          placeholder="Find a recipe..."
+          aria-label="Find a recipe"
+        />
+        <button type="submit" aria-label="Submit search">
+          <span class="icon-search" aria-hidden="true">🔍</span>
+        </button>
+      </form>
+      <div class="recipe-card">
+        <img
+          src="images/chocolate-chip-cookies.jpg"
+          alt="picture of chocolate chip cookies"
+        />
+        <section class="recipe">
+          <button>dessert</button>
+          <h2>Chocolate Chip Cookies</h2>
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+          <p>Delicious soft chocolate chip cookies with coconut.</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+        <a href="#"
+          ><img src="images/instagram_icon.svg" alt="instagram icon"
+        /></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" /></a>
+        <a href="#"
+          ><img src="images/pinterest_icon.svg" alt="pinterest icon"
+        /></a>
+      </div>
+      <a
+        href="https://www.flaticon.com/free-icons/recipe"
+        title="recipe icons"
+        class="flaticon"
+        >Recipe icons created by Freepik - Flaticon</a
+      >
+    </footer>
+  </body>
+</html>
