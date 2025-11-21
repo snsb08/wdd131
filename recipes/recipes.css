@@ -103,6 +103,7 @@ button {
 
 .tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .tags li {
@@ -134,10 +135,10 @@ footer {
 
 @media screen and (min-width: 600px) {
 
-    /* body {
-        max-width: 600px;;
+    body {
+        min-width: 600px;;
         margin: 0 auto;
-    } */
+    }
 
     header {
         flex-direction: row;
