@@ -97,6 +97,21 @@ button {
     margin-bottom: 1rem;
 }
 
+.description {
+    display: none;
+}
+
+.tags {
+    display: flex;
+    gap: 1rem;
+}
+.tags li {
+    border: solid 2px var(--text-dark);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    list-style-type: none;
+    text-align: center;
+}
 
 /* *****Footer***** */
 
@@ -119,6 +134,11 @@ footer {
 
 @media screen and (min-width: 600px) {
 
+    /* body {
+        max-width: 600px;;
+        margin: 0 auto;
+    } */
+
     header {
         flex-direction: row;
         justify-content: center;
@@ -139,6 +159,10 @@ footer {
         height: auto;
     }
 
+    .description {
+    display: block;
+}
+
 
     footer {
         display: flex;
@@ -149,6 +173,13 @@ footer {
 }
 
 @media screen and (min-width: 960px) {
+
+    body {
+        max-width: 960px;;
+        margin: 0 auto;
+    }
+
+  
 
     .logo {
     max-width: 10%;

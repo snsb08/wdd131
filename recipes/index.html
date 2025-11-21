@@ -11,7 +11,7 @@
     <meta name="author" content="Sheyla Norton" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="recipes.css" />
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module"></script>
 
     <!-- open graph -->
     <meta property="og:title" content="Recipe Book" />
@@ -42,29 +42,13 @@
           type="search"
           placeholder="Find a recipe..."
           aria-label="Find a recipe"
+          id="searchInput"
         />
-        <button type="submit" aria-label="Submit search">
+        <button id="searchBtn" type="button" aria-label="Submit search">
           <span class="icon-search" aria-hidden="true">🔍</span>
         </button>
       </form>
-      <div class="recipe-card">
-        <img
-          src="images/chocolate-chip-cookies.jpg"
-          alt="picture of chocolate chip cookies"
-        />
-        <section class="recipe">
-          <button>dessert</button>
-          <h2>Chocolate Chip Cookies</h2>
-          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-          </span>
-          <p>Delicious soft chocolate chip cookies with coconut.</p>
-        </section>
-      </div>
+      <div id="recipe-container"></div>
     </main>
     <footer>
       <div class="social">
