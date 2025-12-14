@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelisting New Items</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+    <meta
+      name="description"
+      content="Travelisting Child Page to add destinations to the current wish list"
+    />
+    <meta name="author" content="Sheyla Norton" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="list-items.js" defer></script>
+  </head>
+  <body>
+    <header class="child-header">
+      <a href="/travel-listing/index.html">
+        <img src="images/travelisting-logo.png" alt="logo" class="logo"
+      /></a>
+      <h1>Travelisting</h1>
+      <button id="menuButton">&#9776;</button>
+      <ul id="child-menu" class="hide">
+        <li><a href="/travel-listing/index.html">Home</a></li>
+        <li><a href="list-items.html">Themes</a></li>
+        <li><a href="list-items.html">Regions</a></li>
+        <li><a href="list-items.html">Interests</a></li>
+      </ul>
+      <!-- <img src="images/camera.jpg" alt="Picture of a camera" class="hero-img" /> -->
+    </header>
+    <main>
+      <!-- <div>
+        <form class="search-bar">
+          <input
+            type="search"
+            placeholder="Search within list"
+            aria-label="Search within list"
+            id="searchInput"
+          />
+          <button id="searchBtn" type="button" aria-label="Submit search">
+            <span class="icon-search" aria-hidden="true">🔍</span>
+          </button>
+        </form>
+      </div> -->
+      <div class="new-list-card card">
+        <h2>New List</h2>
+        <form id="newListForm" action="completed.html">
+          <label for="listName">New List Name:</label>
+          <input type="text" id="listName" name="listName" required />
+
+          <label for="listType">Type of List:</label>
+          <select name="listType" id="listType" required>
+            <option value="" disabled selected>Select Type of List</option>
+            <option value="themes">Themes</option>
+            <option value="regions">Regions</option>
+            <option value="interests">Interests</option>
+          </select>
+
+          <button type="submit" class="order-btn">Add New List</button>
+        </form>
+        <!-- <ul id="wishList" class="destinations"></ul>
+        <section class="add-destination">
+          <input
+            name="wish-item"
+            id="wish-item"
+            placeholder="Add New Destination"
+          />
+          <button id="submitDestination">+</button>
+        </section> -->
+      </div>
+
+      <!-- <div class="cards" id="list-items-container"> -->
+      <!-- Travel list items will be dynamically inserted here -->
+      <!-- </div> -->
+    </main>
+  </body>
+</html>

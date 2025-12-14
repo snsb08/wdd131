@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelisting</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+    <meta
+      name="description"
+      content="Travelisting Home Page. A website for travel enthusiasts to save favorite destinations and make wish lists "
+    />
+    <meta name="author" content="Sheyla Norton" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="travel-listing.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/travel-listing/index.html" class="logo">
+        <img src="images/travelisting-logo.png" alt="logo"
+      /></a>
+      <h1>Travelisting</h1>
+      <button id="menuButton">&#9776;</button>
+      <ul id="menu" class="hide">
+        <li><a href="/travel-listing/index.html">Home</a></li>
+        <li><a href="list-items.html">Themes</a></li>
+        <li><a href="list-items.html">Regions</a></li>
+        <li><a href="list-items.html">Interests</a></li>
+      </ul>
+      <!-- <h2>Your Travel Wishlist Manager</h2> -->
+
+      <!-- <img src="images/camera.jpg" alt="Picture of a camera" class="hero-img" /> -->
+    </header>
+    <div class="hero-images"></div>
+    <main>
+      <h2>Welcome!</h2>
+      <p>
+        Whether you’re chasing ski slopes, iconic cities, national parks, or
+        bucket-list adventures, this is the place to collect it all. Build your
+        own wish lists, organize them by theme, region or interest, and add
+        every must-see spot you discover. Pack your curiosity and transform your
+        wish lists to memories!
+      </p>
+      <div>
+        <form class="search-bar">
+          <input
+            type="search"
+            placeholder="Search"
+            aria-label="Search, Filter travel cards"
+            id="searchInput"
+          />
+          <button id="searchBtn" type="button" aria-label="Submit search">
+            <span class="icon-search" aria-hidden="true">🔍</span>
+          </button>
+        </form>
+      </div>
+      <div class="cards">
+        <!-- <div class="card card-1">
+          <h3>Coastal Towns</h3>
+          <p>Category: Themes</p>
+          <button>Open List</button>
+        </div>
+        <div class="card card-2">
+          <h3>European Cities</h3>
+          <p>Category: Regions</p>
+          <button>Open List</button>
+        </div>
+        <div class="card card-3">
+          <h3>Camping Spots</h3>
+          <p>Category: Interests</p>
+          <button>Open List</button>
+        </div> -->
+      </div>
+      <a href="new-list.html">
+        <button class="new-list-btn">Create New List +</button></a
+      >
+    </main>
+    <footer></footer>
+  </body>
+</html>
