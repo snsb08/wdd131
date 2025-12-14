@@ -61,3 +61,25 @@ document.getElementById("wishList").addEventListener("click", manageDestinations
 
 renderDestinations(destinations);
 //end list item page functionality ***************
+
+
+function wishListTemplate() {
+    return `<li class="strike">
+   <p>Paris</p>
+   <div>
+    <span data-action="complete">✔️</span>
+     <span data-action="delete">❌</span>
+   </div>
+ </li>
+    `;
+}
+
+function displayWishLists() {
+    const wishListContainer = document.querySelector("#wishList");
+    const wishListHTML = lists.map( => wishListTemplate()).join("");
+    wishListContainer.innerHTML = wishListHTML;
+}
+
+function init() {
+  displayWishLists();
+} init();
