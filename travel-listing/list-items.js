@@ -63,26 +63,55 @@ renderDestinations(destinations);
 //end list item page functionality ***************
 
 
-function wishListTemplate() {
-    return `<li class="strike">
-   <p>Paris</p>
-   <div>
-    <span data-action="complete">✔️</span>
-     <span data-action="delete">❌</span>
-   </div>
- </li>
+function memoriesTemplate() {
+
+    const currentTitle = document.title;
+    console.log(currentTitle);
+
+    if (currentTitle == "Coastal Cities") {
+        return `<li class="strike">Sintra</li>
+    <li class="strike">Lisbon</li>
+    <li class="strike">Miami</li>
+    <li class="strike">New York City</li>
     `;
+    } else if (currentTitle == "European Getaways") {
+    return `<li class="strike">Paris</li>
+    <li class="strike">Madrid</li>
+    <li class="strike">Montreux</li>
+    <li class="strike">Rome</li>
+    `; }
+    else if (currentTitle == "Camping Spots") {
+    return `<li class="strike">Blue Springs, Florida</li>
+    <li class="strike">Grand Canyon's North Rim</li>
+    <li class="strike">Grand Teton's Jenny Lake</li>
+    <li class="strike">Bryson City, North Carolina</li>
+    `; } else if (currentTitle == "Mountain Adventures") {
+    return `<li class="strike">Zipline near Asheville, NC</li>
+    <li class="strike">Ski at Swiss Alps, Switzerland</li>
+    <li class="strike">Hike Yellowstone Park</li>
+    <li class="strike">Rafting near Jackson Hole WY</li>` 
+    ;} else {
+    return `<li class="strike">Tegucigalpa</li>
+    <li class="strike">Mexico City</li>
+    <li class="strike">Greenville</li>
+    <li class="strike">Paris</li>
+    `; }
 }
 
-// function displayWishLists() {
-//     const wishListContainer = document.querySelector("#wishList");
-//     const wishListHTML = lists.map( => wishListTemplate()).join("");
-//     wishListContainer.innerHTML = wishListHTML;
-// }
 
-// function init() {
-//   displayWishLists();
-// } init();
+function displayMemories() {
+
+    const memoriesListContainer = document.querySelector("#memories-list");
+    const memoriesListHTML = memoriesTemplate();
+    memoriesListContainer.innerHTML = memoriesListHTML;
+}
+
+
+
+
+function init() {
+  displayMemories();
+} init();
 
 
 

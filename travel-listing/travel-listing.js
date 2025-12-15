@@ -34,7 +34,7 @@ function listTemplate(listsInfo) {
     return `<div class="card"> 
         <h3>${listsInfo.title}</h3>
         <p>Category: ${listsInfo.category}</p>
-        <a href="list-items.html">
+        <a href="${listsInfo.url}">
         <button>Open List</button></a>
     </div> 
     `;
