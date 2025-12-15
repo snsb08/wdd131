@@ -69,7 +69,7 @@ function memoriesTemplate() {
     console.log(currentTitle);
 
     if (currentTitle == "Coastal Cities") {
-        return `<li class="strike">Sintra</li>
+        return ` <li class="strike">Marseille</li>
     <li class="strike">Lisbon</li>
     <li class="strike">Miami</li>
     <li class="strike">New York City</li>
@@ -77,7 +77,7 @@ function memoriesTemplate() {
     } else if (currentTitle == "European Getaways") {
     return `<li class="strike">Paris</li>
     <li class="strike">Madrid</li>
-    <li class="strike">Montreux</li>
+    <li class="strike">Sintra</li>
     <li class="strike">Rome</li>
     `; }
     else if (currentTitle == "Camping Spots") {
