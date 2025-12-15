@@ -31,13 +31,34 @@ menuButton.addEventListener("click", toggleMenu);
 //Display lists info cards ***************
 
 function listTemplate(listsInfo) {
+     const currentTitle = document.title;
+    console.log(currentTitle);
+
+    if (currentTitle == "Themes") {
+        return `
+    <div class="card">
+        <h3>Coastal Cities</h3>
+        <p>Category: Themes</p>
+        <a href="coastal-cities.html">
+        <button>Open List</button></a>
+    </div> 
+    <div class="card">
+        <h3>Mountain Adventures</h3>
+        <p>Category: Themes</p>
+        <a href="mountain-adventures.html">
+        <button>Open List</button></a>
+    </div> 
+        `;
+        
+    } else if (currentTitle == "Travelisting") {
+
     return `<div class="card"> 
         <h3>${listsInfo.title}</h3>
         <p>Category: ${listsInfo.category}</p>
         <a href="${listsInfo.url}">
         <button>Open List</button></a>
     </div> 
-    `;
+    `;}
 }
 
 function displayLists(lists) {
