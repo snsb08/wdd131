@@ -74,12 +74,12 @@ function wishListTemplate() {
     `;
 }
 
-function displayWishLists() {
-    const wishListContainer = document.querySelector("#wishList");
-    const wishListHTML = lists.map( => wishListTemplate()).join("");
-    wishListContainer.innerHTML = wishListHTML;
-}
+// function displayWishLists() {
+//     const wishListContainer = document.querySelector("#wishList");
+//     const wishListHTML = lists.map( => wishListTemplate()).join("");
+//     wishListContainer.innerHTML = wishListHTML;
+// }
 
-function init() {
-  displayWishLists();
-} init();
+// function init() {
+//   displayWishLists();
+// } init();
