@@ -84,6 +84,7 @@ h1 {
     z-index: 3;
     /* position: absolute */
     color: var(--accent-color-1);
+    font-size: 2rem;
 }
 
 #menu {
@@ -103,6 +104,12 @@ h1 {
 p, ul {
     font-family: var(--paragraph-font);
     color: var(--text-dark);
+}
+
+.welcome-message {
+    max-width: 70%;
+    margin: 3rem auto 2rem auto;
+    text-align: center;
 }
 
 li {
@@ -127,8 +134,14 @@ button {
     border: 1px solid var(--primary-color);
     border-radius: 0.5em;
     padding: 1em;
-    margin: 1em;
+    margin: 2rem auto;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.cards-container{
+    width: 50%;
+    margin: 1em auto;
 }
 
 img {
@@ -316,6 +329,14 @@ img {
 
     .list-card {
     width: 50%; 
+    }
+
+    .welcome-message {
+    max-width: 40%;
+    }
+
+    .card {
+        width: 50%;
     }
 
 }

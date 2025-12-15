@@ -31,7 +31,7 @@ menuButton.addEventListener("click", toggleMenu);
 //Display lists info cards ***************
 
 function listTemplate(listsInfo) {
-    return `<div class="card card-{number}"> 
+    return `<div class="card"> 
         <h3>${listsInfo.title}</h3>
         <p>Category: ${listsInfo.category}</p>
         <a href="list-items.html">
