@@ -83,3 +83,29 @@ function wishListTemplate() {
 // function init() {
 //   displayWishLists();
 // } init();
+
+
+
+// navigation menu toggle***************
+
+const menuButton = document.getElementById("menuButton"); //or select by ID?
+// const menu = document.querySelector(ul);   //or select by class?
+
+function addClass() {
+menu.classList.add("hide");
+}
+
+function removeClass() {
+menu.classList.remove("hide");
+}
+
+// menuButton.addEventListener("click", addClass);
+
+function toggleMenu() {
+    const menu = document.querySelector("#menu"); 
+    menu.classList.toggle("hide");
+}   
+
+menuButton.addEventListener("click", toggleMenu);
+
+// end navigation menu toggle***************
